@@ -1,0 +1,17 @@
+[
+    {
+        "question_text": "What are dolphins?",
+        "answers": ["mammal", "reptile", "amphibian", "fish"],
+        "correct_answer": 1
+    },
+    {
+        "question_text": "Where do dolphins live?",
+        "answers": ["Land", "Water", "Air"],
+        "correct_answer": 2
+    },
+    {
+        "question_text": "Classify dolphins by their nutrition",
+        "answers": ["Herbivores", "Carnivores", "Omnivores"],
+        "correct_answer": 2
+    }
+]
