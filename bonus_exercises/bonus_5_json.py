@@ -5,18 +5,31 @@ with open('files/bonus_5.json', 'r') as file:
 
 
 data = json.loads(content)
+score = 0
 
-for question in data:
+for index, question in enumerate(data):
     print(question['question_text'])
     for index, answer in enumerate(question['answers']):
         print(str(index + 1), "-", answer)
 
     user_answer = int(input("What is your answer? -> "))
+    question["user_answer"] = user_answer
 
-    if user_answer == question['correct_answer']:
-        print("That is correct!")
+
+for index, question in enumerate(data):
+
+    if question['user_answer'] == question['correct_answer']:
+        score = score + 1
+        result = "correct answer"
     else:
-        print("Sorry, wrong answer")
+        result = "wrong answer"
+
+    message = f"Question {index + 1}: You had a {result}!"\
+                f" Your answer was {question['user_answer']}."\
+                f" The correct answer was {question['correct_answer']}"
+
+    print(message)
 
 
-print("\nThank you for playing!")
+print(f"\nThank you for playing! Your final score is {score}")
+

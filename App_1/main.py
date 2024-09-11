@@ -8,10 +8,10 @@ print(time.strftime('%b %d, %Y %H:%M:%S'))
 while True:
 
     # Asks user what action they want to execute
-    user_action = input("Do you want to add a todo, \
-edit a todo, \
-complete a todo, \
-show the list of todos or exit the app? -> ")
+    user_action = input("Do you want to add a todo," \
+                        "edit a todo," \
+                        "complete a todo," \
+                        "show the list of todos or exit the app? -> ")
     user_action = user_action.strip()
 
     if user_action.startswith('add'):
