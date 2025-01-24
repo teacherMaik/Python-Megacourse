@@ -9,8 +9,8 @@ score = 0
 
 for index, question in enumerate(data):
     print(question['question_text'])
-    for index, answer in enumerate(question['answers']):
-        print(str(index + 1), "-", answer)
+    for num, answer in enumerate(question['answers']):
+        print(str(num + 1), "-", answer)
 
     user_answer = int(input("What is your answer? -> "))
     question["user_answer"] = user_answer
