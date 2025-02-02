@@ -1,7 +1,7 @@
 import FreeSimpleGUI as sg
-import bonus_gui_zip_creator
+import bonus_gui_zip_funtcions
 
-from bonus_exercises.bonus_functions.bonus_gui_zip_creator import make_archive
+from bonus_exercises.bonus_functions.bonus_gui_zip_funtcions import make_archive
 
 label_from = sg.Text("Select Files")
 input_from = sg.Input(tooltip="")
